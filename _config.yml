@@ -1,0 +1,59 @@
+# Site settings — built natively by GitHub Pages (Jekyll).
+title: Babak Badkoubeh
+tagline: RL Engineer, Robustness Evaluation
+description: >-
+  Babak Badkoubeh is an RL engineer building open tools that report where
+  driving and robotics policies break: failure thresholds in sensor units, with CIs.
+url: https://badkoubeh.github.io
+baseurl: ""
+lang: en
+
+author:
+  name: Babak Badkoubeh
+  url: https://badkoubeh.github.io/
+
+social:
+  name: Babak Badkoubeh
+  links:
+    - https://github.com/badkoubeh
+    - https://www.linkedin.com/in/babakbadkoubeh
+
+# Google Search Console: paste the token from the HTML-tag verification method.
+# webmaster_verifications:
+#   google: YOUR_TOKEN
+#   bing: YOUR_TOKEN
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+
+permalink: /blog/:year/:month/:title/
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle
+  - .jekyll-cache
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+      image:
+        path: /assets/og-card.png
+        width: 1200
+        height: 630
+        alt: "Babak Badkoubeh — RL engineer, robustness evaluation for open-weight policies"
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post

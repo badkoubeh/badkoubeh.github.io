@@ -1,0 +1,19 @@
+---
+title: Blog
+description: "Notes by Babak Badkoubeh on robustness evaluation, dose-response threshold estimation, and what RL post-training does to the failure tails of learned policies."
+permalink: /blog/
+# Hidden from nav and sitemap, and noindexed, until the first post exists.
+# After publishing a post: delete `sitemap: false` and add a Blog link to _includes/header.html.
+sitemap: false
+noindex_if_empty: true
+---
+<h1>Blog</h1>
+{% if site.posts.size > 0 %}
+<ul>
+  {% for post in site.posts %}
+  <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> <span class="updated">· {{ post.date | date: "%B %Y" }}</span></li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>First posts are on the way. Meanwhile, the <a href="{{ '/research/' | relative_url }}">research page</a> has the long version.</p>
+{% endif %}

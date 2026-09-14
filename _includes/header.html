@@ -1,0 +1,11 @@
+<header>
+  <nav class="nav" aria-label="Main">
+    <a class="brand" href="{{ '/' | relative_url }}"><span class="z">ζ</span>&nbsp;Babak Badkoubeh</a>
+    <div class="nav-links">
+      <a href="{{ '/research/' | relative_url }}"{% if page.url contains '/research' %} aria-current="page"{% endif %}>Research</a>
+      <a href="{{ '/projects/' | relative_url }}"{% if page.url contains '/projects' %} aria-current="page"{% endif %}>Projects</a>
+      <a href="{{ '/now/' | relative_url }}"{% if page.url contains '/now' %} aria-current="page"{% endif %}>Now</a>
+      <a class="ext" href="https://github.com/badkoubeh" rel="me noopener">GitHub</a>
+    </div>
+  </nav>
+</header>

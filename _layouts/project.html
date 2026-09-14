@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<article class="page wrap prose">
+  <div class="eyebrow"><a href="{{ '/projects/' | relative_url }}">Projects</a> · {{ page.software.status }}</div>
+{{ content }}
+  <p class="back"><a href="{{ '/projects/' | relative_url }}">← All projects</a> · <a href="{{ '/research/' | relative_url }}">Research</a></p>
+</article>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "name": {{ page.software.name | jsonify }},
+  "description": {{ page.software.description | jsonify }},
+  "url": {{ page.url | absolute_url | jsonify }},{% if page.software.repo %}
+  "codeRepository": {{ page.software.repo | jsonify }},{% endif %}{% if page.software.license %}
+  "license": {{ page.software.license | jsonify }},{% endif %}
+  "programmingLanguage": "Python",
+  "creativeWorkStatus": {{ page.software.status | jsonify }},
+  "author": {
+    "@type": "Person",
+    "@id": "{{ '/' | absolute_url }}#person",
+    "name": "Babak Badkoubeh",
+    "url": "{{ '/' | absolute_url }}"
+  }
+}
+</script>

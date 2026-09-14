@@ -1,0 +1,41 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "{{ '/' | absolute_url }}#person",
+      "name": "Babak Badkoubeh",
+      "givenName": "Babak",
+      "familyName": "Badkoubeh",
+      "url": "{{ '/' | absolute_url }}",
+      "jobTitle": "RL Engineer & Independent Researcher",
+      "description": "RL engineer with a control-systems background, building open robustness-evaluation tools that estimate failure thresholds, with confidence intervals, for driving and robotics policies.",
+      "knowsAbout": [
+        "Reinforcement learning post-training",
+        "RLHF and GRPO",
+        "Reward design",
+        "Robustness evaluation",
+        "Dose-response threshold estimation",
+        "Vision-language-action models",
+        "Autonomous driving evaluation",
+        "Control systems",
+        "Robust control",
+        "Machine learning reproducibility"
+      ],
+      "sameAs": [
+        "https://github.com/badkoubeh",
+        "https://www.linkedin.com/in/babakbadkoubeh"
+      ]
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "{{ '/' | absolute_url }}#profile",
+      "url": "{{ '/' | absolute_url }}",
+      "name": "Babak Badkoubeh",
+      "dateModified": "{{ site.time | date_to_xmlschema }}",
+      "mainEntity": { "@id": "{{ '/' | absolute_url }}#person" }
+    }
+  ]
+}
+</script>
