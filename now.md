@@ -1,15 +1,15 @@
 ---
 title: Now
-description: "What Babak Badkoubeh is working on now: running NVIDIA Alpamayo on one 24 GB GPU, extracting marginkit, and building a reasoning–action consistency measure."
+description: "What Babak Badkoubeh is working on now: running NVIDIA Alpamayo on one 24 GB GPU, releasing robustmargin, and building a reasoning–action consistency measure."
 permalink: /now/
 ---
 
 # Now
 
-<p class="updated">Updated September 2026.</p>
+<p class="updated">Updated October 2026.</p>
 
 - Standing up the released Alpamayo inference path on a single 24 GB GPU and measuring real per-inference wall-clock. (Published latency figures reflect an optimised runtime; I expect the released PyTorch path to be considerably slower.)
-- Extracting [`marginkit`]({{ '/projects/marginkit/' | relative_url }}) from [`zeta-bench`](https://github.com/badkoubeh/zeta-bench) with history preserved, and generalising anything that still assumes a rocket.
+- Released [`robustmargin`]({{ '/projects/robustmargin/' | relative_url }}) 0.1.1 on PyPI, its first release, and moving [`zeta-bench`](https://github.com/badkoubeh/zeta-bench) onto the release. Continuous outcomes and clustered and paired inference are planned for 0.2.
 - Building the rule-based reasoning–action consistency extractor (a re-implementation in spirit, not NVIDIA's internal reward) and hand-labelling its ~100-pair calibration set.
 - Running a standing literature watch on reasoning–trajectory consistency for this model family — it's an active area and I'd rather cite concurrent work than collide with it.
 

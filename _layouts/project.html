@@ -2,7 +2,7 @@
 layout: default
 ---
 <article class="page wrap prose">
-  <div class="eyebrow"><a href="{{ '/projects/' | relative_url }}">Projects</a> · {{ page.software.status }}</div>
+  <div class="eyebrow"><a href="{{ '/projects/' | relative_url }}">Projects</a> · {{ page.software.status }}{% if page.software.version %} · v{{ page.software.version }}{% endif %}</div>
 {{ content }}
   <p class="back"><a href="{{ '/projects/' | relative_url }}">← All projects</a> · <a href="{{ '/research/' | relative_url }}">Research</a></p>
 </article>
@@ -14,7 +14,8 @@ layout: default
   "description": {{ page.software.description | jsonify }},
   "url": {{ page.url | absolute_url | jsonify }},{% if page.software.repo %}
   "codeRepository": {{ page.software.repo | jsonify }},{% endif %}{% if page.software.license %}
-  "license": {{ page.software.license | jsonify }},{% endif %}
+  "license": {{ page.software.license | jsonify }},{% endif %}{% if page.software.version %}
+  "version": {{ page.software.version | jsonify }},{% endif %}
   "programmingLanguage": "Python",
   "creativeWorkStatus": {{ page.software.status | jsonify }},
   "author": {

@@ -5,7 +5,7 @@ description: "marginbench: an open-loop robustness report card for open-weight d
 permalink: /projects/marginbench/
 software:
   name: marginbench
-  description: "Open-loop robustness evaluation harness for open-weight driving policies: physically-calibrated degradation axes, model adapters, and an auto-generated robustness report card built on marginkit."
+  description: "Open-loop robustness evaluation harness for open-weight driving policies: physically-calibrated degradation axes, model adapters, and an auto-generated robustness report card built on robustmargin."
   status: In development
 ---
 
@@ -32,7 +32,7 @@ Every axis carries its citation in code, and that citation appears on the report
 
 ## Two measures, one grid
 
-A trajectory-quality measure and a deterministic, rule-based reasoning–action consistency measure are evaluated on the same fixed severity grid, so their thresholds are directly comparable and the Fieller ratio interval from [marginkit]({{ '/projects/marginkit/' | relative_url }}) means something. Adaptive dosing would put the two curves under different conditions and destroy exactly the comparison the harness exists to make.
+A trajectory-quality measure and a deterministic, rule-based reasoning–action consistency measure are evaluated on the same fixed severity grid, so their thresholds are directly comparable and the Fieller ratio interval from [robustmargin]({{ '/projects/robustmargin/' | relative_url }}) means something. Adaptive dosing would put the two curves under different conditions and destroy exactly the comparison the harness exists to make.
 
 The consistency measure is a re-implementation in spirit — it is not NVIDIA's internal reward.
 

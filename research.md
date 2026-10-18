@@ -56,7 +56,7 @@ The tooling isn't scaffolding for one paper. It's the half of this I expect to o
 
 The practical artifact I want to exist is a **robustness regression harness for anyone doing post-training**: run it before the RL stage, run it after, and see whether the margin moved — in metres, degrees, and milliseconds, with a confidence interval, on the degradation axes your deployment actually faces. Today a team finishing an RL run has no way to answer "did that buy us robustness, or did it push the failure somewhere we aren't looking?" beyond watching aggregate scores go up.
 
-That's why the statistics live in a separate, model-agnostic package — [marginkit]({{ '/projects/marginkit/' | relative_url }}) — with no ML dependency at all. If the only thing that survives from this project is that other people can estimate a threshold with an honest interval on their own systems — driving, robotics, or something I haven't thought of — that's a good outcome. The Alpamayo study is the first real use of the tool and the thing that will prove it works end to end. It isn't the point of building it.
+That's why the statistics live in a separate, model-agnostic package — [robustmargin]({{ '/projects/robustmargin/' | relative_url }}), now on PyPI — with no ML dependency at all. If the only thing that survives from this project is that other people can estimate a threshold with an honest interval on their own systems — driving, robotics, or something I haven't thought of — that's a good outcome. The Alpamayo study is the first real use of the tool and the thing that will prove it works end to end. It isn't the point of building it.
 
 ## Scope, stated honestly {#scope}
 

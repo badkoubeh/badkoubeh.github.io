@@ -1,6 +1,6 @@
 ---
 title: Projects
-description: "Open-source robustness tools by Babak Badkoubeh: marginkit for failure thresholds with confidence intervals, marginbench for driving policies, and zeta-bench."
+description: "Open-source robustness tools by Babak Badkoubeh: robustmargin for failure thresholds with confidence intervals, marginbench for driving policies, and zeta-bench."
 permalink: /projects/
 ---
 <h1>Projects</h1>
@@ -8,10 +8,10 @@ permalink: /projects/
 
 <div class="cards">
   <div class="card">
-    <h3><code>marginkit</code></h3>
+    <h3><code>robustmargin</code><span class="status">On PyPI</span></h3>
     <p class="kicker">The measurement primitive</p>
-    <p>Model-agnostic dose-response threshold estimation. Feed it <code>(severity, outcome)</code> observations; get back σ* with a confidence interval, right-censoring handled, and Fieller intervals for comparing two failure modes. No GPU, no ML dependency.</p>
-    <p class="more"><a href="{{ '/projects/marginkit/' | relative_url }}">Details →</a> · <a href="https://github.com/badkoubeh/marginkit">GitHub</a></p>
+    <p>Model-agnostic dose-response threshold estimation. Feed it <code>(severity, outcome)</code> observations; get back σ* with a confidence interval, censoring handled, and Fieller intervals for comparing two failure modes. No GPU, no ML dependency.</p>
+    <p class="more"><a href="{{ '/projects/robustmargin/' | relative_url }}">Details →</a> · <a href="https://github.com/robustmargin/robustmargin">GitHub</a> · <a href="https://pypi.org/project/robustmargin/">PyPI</a></p>
   </div>
   <div class="card">
     <h3><code>marginbench</code><span class="status">In development</span></h3>
@@ -22,7 +22,7 @@ permalink: /projects/
   <div class="card">
     <h3><code>zeta-bench</code></h3>
     <p class="kicker">Where it started</p>
-    <p>A reproducible robustness benchmark for control systems: stress-testing RL, MPC, LQR, world-model, and PID controllers across a physics-grounded disturbance matrix, including a PID controller on a 6-DOF rocket. marginkit is being extracted from it.</p>
+    <p>A reproducible robustness benchmark for control systems: stress-testing RL, MPC, LQR, world-model, and PID controllers across a physics-grounded disturbance matrix, including a PID controller on a 6-DOF rocket. robustmargin's grid break-point rule started here, and the robustness cards now call it from the package.</p>
     <p class="more"><a href="https://github.com/badkoubeh/zeta-bench">GitHub →</a></p>
   </div>
 </div>

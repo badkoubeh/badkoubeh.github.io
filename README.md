@@ -10,7 +10,7 @@ The method is dose-response estimation borrowed from toxicology and psychophysic
 
 | Project | What it is | Status |
 |---|---|---|
-| [marginkit](https://github.com/badkoubeh/marginkit) · [page](https://badkoubeh.github.io/projects/marginkit/) | Model-agnostic dose-response threshold estimation: σ\* with confidence intervals, right-censoring, Fieller ratio intervals. No GPU, no ML dependency. | In development |
+| [robustmargin](https://github.com/robustmargin/robustmargin) · [PyPI](https://pypi.org/project/robustmargin/) · [page](https://badkoubeh.github.io/projects/robustmargin/) | Model-agnostic dose-response threshold estimation: σ\* with confidence intervals, censoring, Fieller ratio intervals. No GPU, no ML dependency. | Released (alpha) |
 | [marginbench](https://badkoubeh.github.io/projects/marginbench/) | Open-loop robustness report card for open-weight driving policies, with degradation axes calibrated to IMU and GNSS datasheets. | In development |
 | [zeta-bench](https://github.com/badkoubeh/zeta-bench) | Reproducible robustness benchmark for RL, MPC, LQR, world-model, and PID controllers across a physics-grounded disturbance matrix. | Public |
 

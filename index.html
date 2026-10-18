@@ -51,10 +51,10 @@ jsonld_person: true
     <h2>Open tools, <span class="q">one measurement.</span></h2>
     <div class="cards">
       <div class="card">
-        <h3><code>marginkit</code></h3>
+        <h3><code>robustmargin</code><span class="status">On PyPI</span></h3>
         <p class="kicker">The measurement primitive</p>
-        <p>Model-agnostic dose-response threshold estimation. Feed it <code>(severity, outcome)</code> observations; get back σ* with a confidence interval, right-censoring handled, monotonicity checked, and a Fieller interval when you need to test whether one failure mode has a <em>lower</em> threshold than another. No GPU, no ML dependency. It already estimates robustness margins for a classical PID controller on a 6-DOF rocket in <a href="https://github.com/badkoubeh/zeta-bench">zeta-bench</a>.</p>
-        <p class="more"><a href="{{ '/projects/marginkit/' | relative_url }}">marginkit →</a></p>
+        <p>Model-agnostic dose-response threshold estimation. Feed it <code>(severity, outcome)</code> observations; get back σ* with a confidence interval, censoring handled, monotonicity checked, and a Fieller interval when you need to test whether one failure mode has a <em>lower</em> threshold than another. No GPU, no ML dependency — <code>pip install robustmargin</code>. Its grid break-point rule already drives the per-controller robustness cards in <a href="https://github.com/badkoubeh/zeta-bench">zeta-bench</a>, a 6-DOF rocket-landing benchmark.</p>
+        <p class="more"><a href="{{ '/projects/robustmargin/' | relative_url }}">robustmargin →</a></p>
       </div>
       <div class="card">
         <h3><code>marginbench</code><span class="status">In development</span></h3>
