@@ -20,7 +20,7 @@ social:
 
 # Search-engine ownership verification (HTML-tag method); jekyll-seo-tag emits the meta tags.
 webmaster_verifications:
-  google: G2sw41Ea2Gi1hFlYlM7Je0RS4i
+  google: "G2sw41Ea2Gi1hFlYlM7Je0RS4i-5YwNiOONWzmX6q5g"
   # bing: YOUR_TOKEN
 
 plugins:
