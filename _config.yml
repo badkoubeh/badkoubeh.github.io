@@ -18,10 +18,10 @@ social:
     - https://github.com/badkoubeh
     - https://www.linkedin.com/in/babakbadkoubeh
 
-# Google Search Console: paste the token from the HTML-tag verification method.
-# webmaster_verifications:
-#   google: YOUR_TOKEN
-#   bing: YOUR_TOKEN
+# Search-engine ownership verification (HTML-tag method); jekyll-seo-tag emits the meta tags.
+webmaster_verifications:
+  google: G2sw41Ea2Gi1hFlYlM7Je0RS4i
+  # bing: YOUR_TOKEN
 
 plugins:
   - jekyll-seo-tag
