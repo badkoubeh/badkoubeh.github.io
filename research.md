@@ -64,7 +64,7 @@ This work is **open-loop screening**, not a closed-loop safety argument and not 
 
 ## Where this goes {#where-this-goes}
 
-The long-term interest is whether one measurement protocol can characterise systems built on completely different principles — a hand-tuned PID controller on a rocket in [zeta-bench](https://github.com/badkoubeh/zeta-bench) and a large learned driving policy — and return comparable numbers. The statistics package is currently the shared piece between those two, which is at least a real test of whether the core is domain-agnostic. Whether the *interpretation* transfers as cleanly is a more interesting and less settled question.
+The long-term interest is whether one measurement protocol can characterise systems built on completely different principles — a hand-tuned PID controller on a rocket in [zeta-bench](https://github.com/badkoubeh/zeta-bench) and a large learned driving policy — and return comparable numbers. The statistics package, [robustmargin]({{ '/projects/robustmargin/' | relative_url }}), is currently the shared piece between those two, which is at least a real test of whether the core is domain-agnostic. Whether the *interpretation* transfers as cleanly is a more interesting and less settled question.
 
 ## Topics I'd be glad to talk about {#topics}
 

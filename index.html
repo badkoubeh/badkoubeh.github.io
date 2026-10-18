@@ -41,7 +41,7 @@ jsonld_person: true
     <div class="sec-label">The gap</div>
     <h2>Where does it break, <span class="q">and how sure are we?</span></h2>
     <p class="body">Open-weight driving and robotics vision-language-action models are being deployed with no standard way to say where they fail. Papers plot accuracy against perturbation severity and stop there; nobody reports the failure threshold itself with an interval around it. Toxicology and psychophysics solved this decades ago with dose-response modelling — <strong>ED50 estimation, profile-likelihood intervals, Fieller intervals</strong> on the ratio of two thresholds — and essentially none of it has been imported into ML robustness evaluation.</p>
-    <p class="body">I'm building that import as open infrastructure: a model-agnostic statistics package and an evaluation harness that degrades a policy's inputs along physically-calibrated axes and returns <strong>σ*, a threshold in real sensor units, with a confidence interval</strong>.</p>
+    <p class="body">I'm building that import as open infrastructure: a model-agnostic statistics package (<a href="{{ '/projects/robustmargin/' | relative_url }}">robustmargin</a>) and an evaluation harness (<a href="{{ '/projects/marginbench/' | relative_url }}">marginbench</a>) that degrades a policy's inputs along physically-calibrated axes and returns <strong>σ*, a threshold in real sensor units, with a confidence interval</strong>.</p>
   </div>
 </section>
 
